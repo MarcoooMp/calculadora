@@ -1,0 +1,8 @@
+body {
+    background: linear-gradient(45deg, black, rgb(201, 70, 70));
+    height: 100%;
+    color: white; /* Cor da fonte*/
+    font-family: 'Roboto', sans-serif;
+}
+
+
