@@ -24,8 +24,8 @@
 
 
         <div class="calc">
-            <h2>Bora Bill !</h2>
-            <p id="resultado"></p>
+            <h2 id="titleCalc">Calculadora</h2>
+            <p id="results"></p>
             <table>
 
                 <tr>
@@ -36,28 +36,28 @@
                 </tr>
 
                 <tr>
-                    <td><button class="button">7</button></td>
-                    <td><button class="button">8</button></td>
-                    <td><button class="button">9</button></td>
+                    <td><button class="button"onclick="insertNumber('7')">7</button></td>
+                    <td><button class="button"onclick="insertNumber('8')">8</button></td>
+                    <td><button class="button"onclick="insertNumber('9')">9</button></td>
                     <td><button class="button">-</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="button">4</button></td>
-                    <td><button class="button">5</button></td>
-                    <td><button class="button">6</button></td>
+                    <td><button class="button"onclick="insertNumber('4')">4</button></td>
+                    <td><button class="button"onclick="insertNumber('5')">5</button></td>
+                    <td><button class="button"onclick="insertNumber('6')">6</button></td>
                     <td><button class="button">+</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="button">1</button></td>
-                    <td><button class="button">2</button></td>
-                    <td><button class="button">3</button></td>
-                    <td rowspan="2"><button class="button">=</button></td>
+                    <td><button class="button"onclick="insertNumber('1')">1</button></td>
+                    <td><button class="button"onclick="insertNumber('2')">2</button></td>
+                    <td><button class="button"onclick="insertNumber('3')">3</button></td>
+                    <td rowspan="2"><button class="button" style="height: 106px;">=</button></td>
                 </tr>
 
 
-                <td colspan="2"><button class="button">0</button></td>
+                <td colspan="2"><button class="button" style="width:106px;"onclick="insertNumber('0')">0</button></td>
                 <td><button class="button">.</button></td>
                 </tr>
 
@@ -73,9 +73,7 @@
 
 
 
-
-
-
+    <script src="src/index.js"></script>
 </body>
 
 </html>
