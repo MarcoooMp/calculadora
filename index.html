@@ -29,36 +29,36 @@
             <table>
 
                 <tr>
-                    <td><button class="button">C</button></td>
-                    <td><button class="button">X</button></td>
-                    <td><button class="button">/</button></td>
-                    <td><button class="button">*</button></td>
+                    <td><button class="button"onclick="cleanAll()">C</button></td>
+                    <td><button class="button"onclick="del()">X</button></td>
+                    <td><button class="button" onclick="insertCommand('/')">/</button></td>
+                    <td><button class="button"onclick="insertCommand('*')">*</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="button"onclick="insertNumber('7')">7</button></td>
-                    <td><button class="button"onclick="insertNumber('8')">8</button></td>
-                    <td><button class="button"onclick="insertNumber('9')">9</button></td>
-                    <td><button class="button">-</button></td>
+                    <td><button class="button"onclick="insertCommand('7')">7</button></td>
+                    <td><button class="button"onclick="insertCommand('8')">8</button></td>
+                    <td><button class="button"onclick="insertCommand('9')">9</button></td>
+                    <td><button class="button"onclick="insertCommand('-')">-</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="button"onclick="insertNumber('4')">4</button></td>
-                    <td><button class="button"onclick="insertNumber('5')">5</button></td>
-                    <td><button class="button"onclick="insertNumber('6')">6</button></td>
-                    <td><button class="button">+</button></td>
+                    <td><button class="button"onclick="insertCommand('4')">4</button></td>
+                    <td><button class="button"onclick="insertCommand('5')">5</button></td>
+                    <td><button class="button"onclick="insertCommand('6')">6</button></td>
+                    <td><button class="button"onclick="insertCommand('+')">+</button></td>
                 </tr>
 
                 <tr>
-                    <td><button class="button"onclick="insertNumber('1')">1</button></td>
-                    <td><button class="button"onclick="insertNumber('2')">2</button></td>
-                    <td><button class="button"onclick="insertNumber('3')">3</button></td>
-                    <td rowspan="2"><button class="button" style="height: 106px;">=</button></td>
+                    <td><button class="button"onclick="insertCommand('1')">1</button></td>
+                    <td><button class="button"onclick="insertCommand('2')">2</button></td>
+                    <td><button class="button"onclick="insertCommand('3')">3</button></td>
+                    <td rowspan="2"><button class="button" style="height: 106px;" onclick="calculate()">=</button></td>
                 </tr>
 
 
-                <td colspan="2"><button class="button" style="width:106px;"onclick="insertNumber('0')">0</button></td>
-                <td><button class="button">.</button></td>
+                <td colspan="2"><button class="button" style="width:106px;"onclick="insertCommand('0')">0</button></td>
+                <td><button class="button"onclick="insertCommand('.')">.</button></td>
                 </tr>
 
 
